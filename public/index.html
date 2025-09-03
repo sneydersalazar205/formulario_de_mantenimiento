@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantenimiento de Computadoras</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Servicio Profesional de Mantenimiento</h1>
+    <p>Cuidamos tu equipo como si fuera nuestro.</p>
+    <a href="#agendar" class="btn">Agendar Cita</a>
+  </header>
+
+  <section class="services">
+    <h2>Servicios</h2>
+    <div class="service-list">
+      <article>
+        <img src="img/preventivo.svg" alt="Servicio preventivo">
+        <h3>Preventivo</h3>
+        <p>Mantenimiento periódico para evitar fallas.</p>
+      </article>
+      <article>
+        <img src="img/reparacion.svg" alt="Servicio de reparación">
+        <h3>Reparación</h3>
+        <p>Solución de problemas de hardware y software.</p>
+      </article>
+      <article>
+        <img src="img/actualizacion.svg" alt="Servicio de actualización">
+        <h3>Actualización</h3>
+        <p>Mejoramos el rendimiento de tu equipo.</p>
+      </article>
+      <article>
+        <img src="img/armado.svg" alt="Servicio de armado">
+        <h3>Armado</h3>
+        <p>Construimos tu PC ideal con piezas a medida.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="references">
+    <h2>Referencias</h2>
+    <div class="carousel">
+      <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+      <div class="slides">
+        <div class="slide active">
+          <img src="img/ref1.svg" alt="Referencia de cliente 1">
+          <p>"Excelente servicio y atención." - Juan P.</p>
+        </div>
+        <div class="slide">
+          <img src="img/ref2.svg" alt="Referencia de cliente 2">
+          <p>"Mi equipo quedó como nuevo." - María L.</p>
+        </div>
+        <div class="slide">
+          <img src="img/ref3.svg" alt="Referencia de cliente 3">
+          <p>"Rápidos y profesionales." - Carlos R.</p>
+        </div>
+      </div>
+      <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="agendar" class="schedule">
+    <h2>Agenda tu Cita</h2>
+    <form id="appointmentForm">
+      <div class="grid">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div>
+          <label for="modalidad">Modalidad</label>
+          <select id="modalidad" name="modalidad" required>
+            <option value="">Seleccione</option>
+            <option value="remota">Remota</option>
+            <option value="presencial">Presencial</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Servicios</legend>
+            <label><input type="checkbox" name="servicios" value="preventivo"> Preventivo</label>
+            <label><input type="checkbox" name="servicios" value="reparacion"> Reparación</label>
+            <label><input type="checkbox" name="servicios" value="actualizacion"> Actualización</label>
+            <label><input type="checkbox" name="servicios" value="armado"> Armado</label>
+          </fieldset>
+        </div>
+      </div>
+      <label for="descripcion_pc">Descripción del computador</label>
+      <textarea id="descripcion_pc" name="descripcion_pc" rows="3"></textarea>
+      <label for="descripcion_problema">Descripción del problema</label>
+      <textarea id="descripcion_problema" name="descripcion_problema" rows="3"></textarea>
+      <label><input type="checkbox" id="terminos" name="terminos" required> Acepto los Términos y Condiciones</label>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="services">
+    <p>&copy; 2024 Mantenimiento de Computadoras</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
