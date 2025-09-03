@@ -1,6 +1,6 @@
 # Formulario de Mantenimiento
 
-Proyecto web responsivo para promocionar servicios de mantenimiento de computadoras. Incluye una landing page con formulario de agendamiento y un botón de acceso al login donde se muestra la tabla de citas.
+Proyecto web responsivo para promocionar servicios de mantenimiento de computadoras. Incluye una landing page con formulario de agendamiento y un botón de acceso al login donde se muestra la tabla de cita
 
 ## Requisitos
 
@@ -24,8 +24,6 @@ Proyecto web responsivo para promocionar servicios de mantenimiento de computado
 npm start
 ```
 
-- Abre `http://localhost:3000` y desde la landing usa el botón **Login** para acceder a `public/login.html`.
-- Tras autenticarse podrás ver la tabla con las citas y botones de **Confirmar**, **Editar**, **Borrar** y **Diagnóstico**.
 
 ### Conexión con XAMPP
 
